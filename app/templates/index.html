@@ -1,0 +1,35 @@
+{% extends "template.html" %}
+{% block content %}
+    <section class="section1">
+        <div class="wrapper">
+            <div class="find">
+                <ul class="select">
+                    <li class="list"><a href="#">Sumsung</a></li>
+                    <li class="list"><a href="#">Infinix</a></li>
+                    <li class="list"><a href="#">Tecno</a></li>
+                    <li class="list"><a href="#">Oppo</a></li>
+                    <li class="list"><a href="#">Vivo</a></li>
+                    <li class="list"><a href="#">Huwei</a></li>
+                    <li class="list"><a href="#">Iphone</a></li>
+                </ul>
+            </div>
+            <div class="intro">
+                <h1>Smart World, Live A Smart Life Now!</h1>
+                <p>
+                    We are number one smartphones importers in South Sudan. We import new Smart Phones of all types from abroad
+                    and sell them at a relatively low affordable prices. <br >
+                    Find the latest with us now.
+                </p>
+                <p id="link">
+                    We have phones like <a href="#">Sumsung</a>, <a href="">Infinix</a>, <a href="">Tecno</a>,
+                    <a href="">Huwei</a>, <a href="#">Oppo</a>, <a href="#">Vivo</a> and <a href="#">Iphone</a>.<br >
+                    Place your order now and we deliver to you.
+                </p>
+		    <a href="{{ url_for('main.products') }}" class="shop-now">SHOP NOW!</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section2">
+    </section>
+{% endblock %}

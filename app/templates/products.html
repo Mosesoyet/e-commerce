@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+{% block content %}
+
+<section class="products-sectiom">
+    <div class="product">
+	    {% for product in products %}
+	    <div class="productDiv">
+		    <h2 class="productTitle">{{ product[1] }}</h2>
+			<div class="pricing">
+			    <span class="price">{{ product[2] }}</span>
+			    <span class="priceNow">{{ product[3] }}</span>
+		    </div>
+		    <div class="productImage">
+			    <img src="{{ product[4] }}">
+		    </div>
+			<button class="add-to-cart">Add To Cart</button>
+			</div>
+	    {% endfor %}
+    </div>
+</section>
+
+{% endblock %}

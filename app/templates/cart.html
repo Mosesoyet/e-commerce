@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+{% block content %}
+
+<section class="cartSection">
+    <div class="cart-sidebar">
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <div class="cart-content"></div>
+        </div>
+        <div class="total-sum">
+            <h1>Your Total: $<span class="total-amount">0</span></h1>
+        </div>
+        <div class="clear-cart">
+            <button id="clear" class="btn clear-cart btn">Clear Cart</button>
+        </div>
+        <div class="clear-cart">
+            <button class="btn clear-cart-btn">Proceed</button>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

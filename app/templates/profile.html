@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+{% block content %}
+
+<section class="profileSection">
+    <div class="profile_wrapper">
+        <button class="logout">
+            <a href="{{ url_for('auth.logout') }}">Logout</a>
+        </button>
+        <div class="profile">
+            <h1>USER PROFILE</h1>
+            <div>
+                <p>First Name: {{ firstname }}.</p>
+            </div>
+            <div>
+                <p>Last Name:  {{ lastname }}.</p>
+            </div>
+            <div>
+                <p>Email: {{ email }}.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

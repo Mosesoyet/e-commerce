@@ -1,0 +1,35 @@
+{% extends "template.html" %}
+{% block content %}
+
+<section class="loginSection">
+    <div class="wrapper">
+        <div class="loginWrapper">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <div class="warning">
+		    {{ messages[0] }}. Don't have account, <a href="{{ url_for('auth.signup') }}">Signup here</a>
+            </div>
+            {% endif %}
+            {% endwith %}
+            <form action="/login" method="POST">
+                <div class="log">
+                    <input type="email" name="email" placeholder="Email address" autofocus>
+                </div>
+                <div class="log">
+                    <input type="password" name="password" placeholder="password">
+                </div>
+                <div class="log">
+                    <label for="remember">
+                        <input type="checkbox" name="remember">
+                        Remember Login
+                    </label>
+                </div>
+                <button type="submit" id="login-butt">Login</button>
+            </form>
+           
+        </div>
+        
+    </div>
+</section>
+
+{% endblock %}

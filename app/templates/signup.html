@@ -1,0 +1,37 @@
+{% extends "template.html" %}
+{% block content %}
+
+<section class="signupSection">
+    <div class="wrapper">
+        <p style="color: wheat; text-align: center;">Quickly create an account and enjoy shopping. Thanks!</p>
+        <div class="formwrapper">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <div class="warning">
+                {{ messages[0] }}. Go to <a href="{{ url_for('auth.login') }}">Login Page</a>
+            </div>
+            {% endif %}
+            {% endwith %}
+            <form method="POST">
+                <div class="action">
+                    <input type="text" name="firstname" placeholder="First name" id="firstname" autofocus>
+                </div>
+                <div class="action">
+                    <input type="text" name="lastname" placeholder="Last name" id="lastname" autofocus>
+                </div>
+                <div class="action">
+                    <input type="email" name="email" id="email" placeholder="Email Address" autofocus>
+                </div>
+                <div class="action">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="signuo-butt">
+                    <button type="submit" onclick="validateForm()" id="signup-butt">Signup</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</section>
+
+{% endblock %}
