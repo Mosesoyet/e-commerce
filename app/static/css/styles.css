@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0 5px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 2px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.header1 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: cornflowerblue;
+}
+.burger {
+    width: 35px;
+    height: 28px;
+    display: none;
+    margin-left: 2px;
+}
+.lay1, .lay2, .lay3 {
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    margin-top: 4px;
+    background: black;
+}
+.logo{
+    font-size: 2em;
+}
+.logotext {
+    color: rgb(59, 28, 6);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar {
+    width: 25%;
+    margin-left: 7em;
+    height: auto;
+}
+.menubar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+.item a{
+    font-size: 1.5em;
+    color: rgb(32, 3, 3);
+    transition: 0.3s linear;
+}
+.item a:hover {
+    font-size: 1.45em;
+    color: black;
+    transition: 0.3s linear;
+}
+
+/* Section 1 design */
+.section1 {
+    width: 100%;
+    height: calc(100vh - 10vh);
+    background: url("../images/back.webp") center center/cover;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.85;
+}
+.intro {
+    width: 50%;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    z-index: -10;
+    transition: 0.3s linear;
+}
+.intro > #link a{
+    color: #064b13;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+}
+.intro > .shop-now {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f09d51;
+    text-align: center;
+    font-size: 1.5em;
+    color: green;
+}
+.intro > p, h1{
+    color: black;
+}
+.intro h1 {
+    text-align: center;
+    color: rgb(5, 161, 5);
+    margin: 10px;
+}
+/* Design find navigation class */
+
+.find {
+    width: 98%;
+    margin: 0px 10px;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    height: auto;
+}
+.select {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list a {
+    font-size: 1.5em;
+    color: yellow;
+    transition: 0.3s linear;
+}
+.list a:hover {
+    font-size: 1.45em;
+    transition: 0.1s linear;
+    color: rgb(57, 57, 3);
+}
+
+/*Design signup form/login form */
+.signupSection {
+    width: 100%;
+    height: calc(100vh - 10vh);
+    background: green;
+}
+.formwrapper {
+    width: 450px;
+    height: 300px;
+    background: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 11;
+}
+.formwrapper > form {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.action {
+    width: 80%;
+    height: 30px;
+    box-shadow: 0px 5px 12px rgba(0, 1, 10, 9), 0px 0px 13px rgba(0, 0, 0, 10);
+}
+.action > input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+}
+#signup-butt {
+    width: 130px;
+    height: 30px;
+    background: green;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+#signup-butt:hover {
+    width: 128px;
+    background: greenyellow;
+    transition: 0.3s linear;
+}
+.login-here a{
+    color: blue;
+    font-family: fantasy;
+    text-decoration: underline;
+}
+
+/* Login section */
+.loginSection {
+    width: 100%;
+    height: calc(100vh - 10vh);
+    background: green;
+}
+.loginWrapper {
+    width: 450px;
+    height: 230px;
+    background: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+}
+.loginWrapper > form {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.log {
+    width: 80%;
+    height: 30px;
+}
+.log > input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+}
+#login-butt {
+    width: 100px;
+    height: 30px;
+    background: green;
+    color: wheat;
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sidemenubar {
+    display: none;
+}
+
+/* Cart */
+.cart {
+    padding-right: 2em;
+    position: relative;
+}
+
+.cart .number-of-items {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: rgb(5, 1, 32);
+    position: absolute;
+    left: 18px;
+    top: -7px;
+    height: 30px;
+    width: 30px;
+    border-radius: 7px;
+    background: url("../images/cart.jpg") no-repeat center center/cover;
+}
+.number-of-items .noi {
+    font-size: 0.7em;
+}
+.fa-shopping-cart {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/*Cart sidebar */
+.cartSection {
+    width: 100%;
+    height: 100vh;
+}
+
+.cart-sidebar{
+    background: #ececec;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    transition: all 0.3s linear;
+    overflow: hidden;
+}
+
+.cart-sidebar .cart{
+    padding: 0;
+}
+
+
+.cart h2{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+    font-family: verdana;
+}
+
+.cart-product .product-image img{
+    width: 130px;
+    height: 90px;
+}
+
+.cart-product-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1em;
+    height: 80px;
+}
+
+.plus-minus{
+    display: flex;
+    transform: rotate(90deg);
+    color: #f09d51;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.total-sum{
+    text-align: center;
+    margin: 1em 0 0.5em 0;
+}
+
+.clear-cart{
+    text-align: center;
+}
+
+#clear {
+    background: red;
+}
+#clear:hover {
+    background: transparent;
+}
+.clear-cart .btn{
+    background: green;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5em 1.7em;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.clear-cart .btn:hover{
+    border: 1px solid #d4761e;
+    background: transparent;
+    color: black;
+}
+
+.overlay{
+    height: 80vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    background-color: #064b13;
+    opacity: 0.5;
+    transition: all 0.3s linear;
+}
+
+.none{
+    display: none;
+}
+.warning {
+    width: 100%;
+    height: auto;
+    background: red;
+    color: black;
+}
+.profileSection {
+    width: 100%;
+    height: calc(100vh - 10vh);
+    background: gray;
+}
+.profile_wrapper {
+    width: 98%;
+    height: 100%;
+    overflow-y: auto;
+    margin-left: 10px;
+}
+.profile {
+    width: 90%;
+    height: auto;
+    border: 1px solid black;
+    margin: 10px;
+}
+.profile h1 {
+    text-align: center;
+    color: rgb(2, 32, 2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profile div{
+    margin: 10px 5px;
+}
+.logout {
+    width: 100px;
+    height: 30px;
+    background: brown;
+    float: right;
+    margin: 10px;
+}
+.logout a{
+    font-size: 1.5em;
+}
+.authenticated {
+    border: 1px solid black;
+}
+
+.product {
+    margin: 10px 10px auto;
+    max-width: 1500px;
+    display: grid;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.productDiv {
+    max-width: 350px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgb(182, 177, 177);
+}
+.productDiv > .productTitle {
+    font-size: 1.2em;
+    color: rgb(2, 50, 2);
+    font-family: sans-serif;
+}
+.productDiv > .pricing {
+    width: 50px;
+    height: 50px;
+    border: 1px solid brown;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 11px rgba(2, 5, 11, 10), 0 11px 10px rgba(0,0,4,12);
+}
+.productDiv > .productImage {
+    width: 300px;
+    height: 300px;
+    margin: 10px 5px;
+    border: 1px solid rgb(139, 135, 135);
+    transition: 0.3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.price {
+    color: red;
+    text-decoration: line-through;
+}
+.priceNow {
+    color: #064b13;
+    font-weight: bolder;
+}
+.productDiv > .add-to-cart {
+    width: 100px;
+    height: 30px;
+    background: green;
+    font-weight: bolder;
+    float: right;
+}
+.productImage img{
+	width: 100%;
+	height: 100%;
+}
