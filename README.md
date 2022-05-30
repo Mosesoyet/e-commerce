@@ -1,19 +1,42 @@
 # AN E-COMMERCE WEBSITE FOR COLLEGE PORTFOLIO PROJECT: (LAST TREMESTER)
 
+<a href="https://portfolio-de-moses.netlify.app">Check my Portfolio</a>
+
+***NOTE*** This app is not yet deployed!
 <img src="app/static/images/project_home.png">
 ## INTRODUCTION
 
-This website is a demo project for my college portfolio project and it meets demand of a fully functional \
+This website is a project for my college portfolio project and it meets demand of a fully functional \
 e-commerce website.
 
 As an e-commerce website, it'll have a functional shopping cart and user authentication system for those\
 who want to place their orders.
+
+## WHAT INSPIRED ME TO WORK ON THIS PROJECT.
+
+I love business logic and beleived that through tech, business problems can easily be solved. 
+
+While studying JavaScript at simplilearn, one of the projects at the end of course was building a fully functiooning e-commerce website using HTML, CSS and JavaScript.
+
+I did enjoy every bit of the project and surely planned to work on my own project. I then chose python and framework Flask to make my website unique from that of Simplilearn.
+I love writing the backend site of my app most, and to be honest I love database management which was not covered at simplilearn.
+
+Though this project didn't completely come as I espected, it's even way better to me because never once at Simplilearn had I successfully finished complete app production.
+
+## NEXT / FUTURE PROJECT:
+
+For any similar project that I might work on in the future, i planned to use ***Odoo*** ( A management software with a range of business application)
+
+## PROJECT TARGET:
+
+This project targets business owners and their customers since it's more of online sale.
 
 ## PROJECT REQUIREMENTS:
 
 <ul>
 <li>Done on ubuntu 20.04</li>
 <li>A README.md file</li>
+<li>HTML,CSS and JavaScript</li>
 <li>Flask (Python micro framework for web development)</li>
 <li>An horuku account for deployment</li>
 </ul>
